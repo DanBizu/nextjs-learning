@@ -1,0 +1,12 @@
+{
+   "verbose": false,
+   "ext": "js json",
+   "watch": "server/**/*.js",
+   "ignore": [
+      "pages/**/*",
+      "public/**/*",
+      "styles/**/*",
+      "config/**/*"
+   ],
+   "exec": "babel-node ./server/main.js"
+}

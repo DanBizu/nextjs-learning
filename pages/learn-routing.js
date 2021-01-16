@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
 
-export default function LearnRouting() {
+function LearnRouting() {
 	const [message, setMessage] = useState('');
 
 	useEffect(() => {
@@ -31,3 +32,5 @@ export default function LearnRouting() {
 		</div>
 	);
 }
+
+export default connect()(LearnRouting);
